@@ -1,0 +1,17 @@
+*body {
+    background-color: blueviolet;
+}
+    div{
+      justify-content: space-between ;
+        display: flex;
+        margin: left 30px;
+        margin: right 20px;
+        margin: top 40px;
+    }
+h1 {
+    font-style: italic;
+    background-color: blue;
+    color: aqua;
+    padding: 10px;
+    box-shadow: 4px 7px 11px;
+}

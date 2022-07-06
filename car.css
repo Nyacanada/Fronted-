@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(209, 209, 224);
+    font-family:"Roboto", sans-serif;
+    margin: 0;
+}
+.container {
+    padding: 1rm;
+    margin: auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+header {
+   background-image: url(./Peter.jpg);
+   background-size: cover;
+   background-position: center;
+   color: whitesmoke;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   min-height: calc(100vh - 102px);
+}
+.content{
+    font-size: 2rem;
+    margin: auto;
+    min-width: 100%;
+}
+   
+.content h1 {
+    color: rgb(183, 242, 242);
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 2.5.rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: aliceblue;
+    padding: 1rem;
+    text-decoration:none;
+}
+.selected {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: blue;
+    color: rgb(212, 222, 219);
+    padding: 1rem;
+    text-decoration: none;
+}
+footer {
+    background-color: black;
+    color:white;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+footer strong {
+    color: rgb(31, 31, 244);
+}
+
+footer p {
+    margin: 0;
+}
+@media screen and (max-width: 700px) {
+.content {
+    font-size: 1.4rem;
+}
+
+nav ul {
+  flex-direction: column;
+}
+
+nav .highlight {
+    display: none;
+}
+nav  li:not(:last-child) {
+    margin-bottom: 1 rem;
+}
+
+footer ul {
+    flex-direction: column;
+    justify-content: center;
+}
+footer li {
+    margin: 1 rem;
+    text-align: center;
+}
